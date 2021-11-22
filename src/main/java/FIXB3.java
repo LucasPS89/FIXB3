@@ -57,7 +57,7 @@ public class FIXB3 {
         System.out.println(String.format("Tempo gasto no total: %s(ms) | %s(s)", total, total/1000));
         if (exec3) {
             System.out.println("-------------------------------------------------------------------");
-            System.out.println("Resultado printado no arquivo data/Result.txt");
+            System.out.println("Resultado salvo no arquivo data/Result.txt");
             System.out.println("-------------------------------------------------------------------");
         }
     }

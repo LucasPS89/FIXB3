@@ -49,6 +49,10 @@ public class Parte3 {
         String[] joinColumns = new String[] {"Conta", "Instrumento", "Lado"};
         this.Result = this.AllMsgSummarized.joinOn(joinColumns).inner(this.FullFillSummarized, true, joinColumns);
 
+        //Renaming Columns
+        this.Result.column("PrecoMedio").setName("CsvPrecoMedio");
+        this.Result.column("T2.PrecoMedio").setName("TxtPrecoMedio");
+
         //Save Result to TXT File
         try(PrintWriter wTXT = new PrintWriter("data/Result.txt")){
             wTXT.write(this.Result.setName("Results").printAll());

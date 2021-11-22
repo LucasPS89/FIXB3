@@ -53,3 +53,8 @@ Caso queira executar o código sem compilar, diretamente pela IDE, execute arqui
 É recomendado fazer a compilação através do Maven e executar o arquivo Jar ao invés de executar pela IDE.
 
 O programa foi desenvolvido utilizando a ide IntelliJ. Caso use NetBeans ou Eclipe, podem ocorrer problemas de compatilidade.
+
+## Pontos que não foram alcaçados da forma prevista
+- Item 1.2 e 1.3: De acordo com o documento da B3, o campo AvgPx sempre tem valor fixo 0 (zero). Foi utilizado o campo LastPx no lugar;
+- Item 2.1 e 2.2: tag 1010 e 1011 não foram encontradas na lista de Tags do FIX Protocol. Esse tratamento foi ignorado.
+- Item 2.3: Por falta de especificação, arquivo FullFill.txt foi escrito no mesmo **formato** do arquivo AllMsgs.CSV 

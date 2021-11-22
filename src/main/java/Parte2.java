@@ -63,7 +63,7 @@ public class Parte2 {
         PrintWriter wTXT = new PrintWriter("data/FullFill.txt");
 
         //Write Header
-        String header = "Horário;Conta;Instrumento;Lado;QtdOrdem;QtdExecucaoAtual;QtdExecutadaAcumulada;PrecoExecutado;NotionalOrdem;NotionalExecuçãoAtual;NotionalExecuçãoAcumulada;EnteringTrader\n";
+        String header = "Horário;Conta;Instrumento;Lado;QtdOrdem;QtdExecucaoAtual;QtdExecucaoAcumulada;PrecoExecutado;NotionalOrdem;NotionalExecucaoAtual;NotionalExecucaoAcumulada;EnteringTrader\n";
         wCSV.write(header);
         wTXT.write(header);
 
@@ -102,9 +102,9 @@ public class Parte2 {
             String securityIDSource = er.getField(new quickfix.field.SecurityIDSource()).getValue();
 
             //Calculate Derived Fields
-            double notional_order = price * cumQty;
-            double notional_last_execution = lastPx * lastQty;  //TODO: De acordo com B3 tem o valor fixo = 0. Ao invés de AvgPx estou usando LastPX
-            double notional_acc_execution = lastPx * cumQty;    //TODO: De acordo com B3 tem o valor fixo = 0. Ao invés de AvgPx estou usando LastPX
+            double notionalOrder = price * cumQty;
+            double notionalLastExecution = lastPx * lastQty;  //TODO: De acordo com o doct da B3, AvgPx tem o valor fixo = 0. Ao invés de AvgPx estou usando LastPX.
+            double notionalAccExecution = lastPx * cumQty;    //TODO: De acordo com o doct da B3, AvgPx tem o valor fixo = 0. Ao invés de AvgPx estou usando LastPX.
 
             //write line
             StringBuilder sb = new StringBuilder();
@@ -116,9 +116,9 @@ public class Parte2 {
             sb.append(lastQty);                     sb.append(";");
             sb.append(cumQty);                      sb.append(";");
             sb.append(lastPx);                      sb.append(";");
-            sb.append(notional_order);              sb.append(";");
-            sb.append(notional_last_execution);     sb.append(";");
-            sb.append(notional_acc_execution);      sb.append(";");
+            sb.append(notionalOrder);              sb.append(";");
+            sb.append(notionalLastExecution);     sb.append(";");
+            sb.append(notionalAccExecution);      sb.append(";");
             sb.append(partyID);                     sb.append('\n');
 
             wCSV.write(sb.toString());

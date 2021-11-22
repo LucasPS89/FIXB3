@@ -57,7 +57,10 @@ public class ExecutionReportGenerator {
         }else{
             er.getHeader().setField(new OrdStatus(OrdStatus.PARTIALLY_FILLED));
             orderQty = 1+(10 - rand.nextInt(9));
-            lastQtyFilled = 1+rand.nextInt(orderQty);
+            lastQtyFilled = 0;
+            while (lastQtyFilled == 0 ){
+                lastQtyFilled = rand.nextInt(orderQty);
+            }
             cumQty = lastQtyFilled;
         }
         int leavesQty = orderQty - cumQty;

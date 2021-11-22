@@ -82,7 +82,7 @@ public class ExecutionReportGenerator {
         er.set(new ExecID(execId.toString()));
 
         //Order Prices
-        double lastFillPrice = 1+rand.nextDouble();
+        double lastFillPrice = rand.nextDouble()*100;
         double price = lastFillPrice;
         er.set(new AvgPx(0));
         er.set(new LastPx(lastFillPrice));

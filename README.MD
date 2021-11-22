@@ -35,13 +35,21 @@ cd target
 Uma vez dentro do diretório, execute o projeto através do comando:
 
 ```bash
-java -jar FIXB31.0-shapshot.jar
+java -jar FIXB3.jar
 ```
 
 #### Parâmetros de execução
+Por padrão o programa executará todos os passos de uma só vez.
 Caso deseje executar apenas um ou mais partes do projeto, basta passar como parametro o número das partes que deseja executar.
-Por exemplo:
+
+Por exemplo, caso queira executar apenas os passos 1 e 2:
 
 ```bash
-java -jar FIXB31.0-shapshot.jar 1 2 
+java -jar FIXB3.jar 1 2 
 ```
+
+### Execução sem compilação
+Caso queira executar o código sem compilar, diretamente pela IDE, execute arquivo FIXB3.java diretamente pela IDE.
+É recomendado fazer a compilação através do Maven e executar o arquivo Jar ao invés de executar pela IDE.
+
+O programa foi desenvolvido utilizando a ide IntelliJ. Caso use NetBeans ou Eclipe, podem ocorrer problemas de compatilidade.

@@ -113,6 +113,7 @@
                             <mainClass>FIXB3</mainClass>
                         </manifest>
                     </archive>
+                    <finalName>FIXB3</finalName>
                 </configuration>
             </plugin>
         </plugins>

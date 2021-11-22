@@ -25,7 +25,7 @@ public class FIXB3 {
             Parte1 p1 = new Parte1();
             p1.GenerateExecutionReports();
             long p1_total = System.currentTimeMillis() - start;
-            System.out.println(String.format("Concluída PARTE 1. Tempo gasto: %s (ms) | %s (s)", p1_total, p1_total / 1000));
+            System.out.println(String.format("Concluida PARTE 1. Tempo gasto: %s(ms) | %s(s)", p1_total, p1_total / 1000));
         }
 
         //Parte2 do Teste
@@ -36,7 +36,7 @@ public class FIXB3 {
             Parte2 p2 = new Parte2();
             p2.ProcessMessages();
             long p2_total = System.currentTimeMillis() - p2_start;
-            System.out.println(String.format("Concluída PARTE 2. Tempo gasto: %s(ms) | %s(s)", p2_total, p2_total / 1000));
+            System.out.println(String.format("Concluida PARTE 2. Tempo gasto: %s(ms) | %s(s)", p2_total, p2_total / 1000));
         }
 
         //Parte3 do Teste
@@ -47,7 +47,7 @@ public class FIXB3 {
             Parte3 p3 = new Parte3();
             p3.CompareFiles();
             long p3_total = System.currentTimeMillis() - p3_start;
-            System.out.println(String.format("Concluída PARTE 3. Tempo gasto: %s(ms) | %s(s)", p3_total, p3_total / 1000));
+            System.out.println(String.format("Concluida PARTE 3. Tempo gasto: %s(ms) | %s(s)", p3_total, p3_total / 1000));
         }
 
         //Termino do processo
@@ -55,6 +55,10 @@ public class FIXB3 {
         System.out.println("-------------------------------------------------------------------");
         System.out.println("Processo encerrado.");
         System.out.println(String.format("Tempo gasto no total: %s(ms) | %s(s)", total, total/1000));
-        System.out.println("Resultado printado no arquivo ./data/Result.txt");
+        if (exec3) {
+            System.out.println("-------------------------------------------------------------------");
+            System.out.println("Resultado printado no arquivo data/Result.txt");
+            System.out.println("-------------------------------------------------------------------");
+        }
     }
 }

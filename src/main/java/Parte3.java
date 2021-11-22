@@ -1,5 +1,7 @@
 import tech.tablesaw.api.Table;
 import tech.tablesaw.io.csv.CsvReadOptions;
+
+import java.io.File;
 import java.io.IOException;
 import java.io.PrintWriter;
 import static tech.tablesaw.aggregate.AggregateFunctions.mean;
@@ -15,6 +17,14 @@ public class Parte3 {
     private Table Result;
 
     public void CompareFiles() throws IOException {
+        //Check if Parte 2 was executed
+        String file_path = "data/AllMsgs.csv";
+        File f = new File(file_path);
+        if(!f.exists()) {
+            System.out.println("Parte 2 do teste não foi executada. Não é possível prosseguir com a parte 3");
+            return;
+        }
+
         //Load Files into memory
         this.loadTXT();
         this.loadCSV();
@@ -33,8 +43,11 @@ public class Parte3 {
 
         //Save Result to TXT File
         try(PrintWriter wTXT = new PrintWriter("data/Result.txt")){
-            wTXT.write(this.Result.toString());
-            wTXT.close();
+            /*for (Row row : this.Result){
+                wTXT.write(row.toString());
+            }*/
+            wTXT.write(this.Result.printAll());
+
         }
     }
 
@@ -46,11 +59,9 @@ public class Parte3 {
         CsvReadOptions.Builder builder =
                 CsvReadOptions.builder("data/FullFill.txt")
                         .separator(';')
-                        .header(true)
-                        .dateFormat("yyyy-MM-dd");
+                        .header(true);
         CsvReadOptions options = builder.build();
         this.FullFill = Table.read().usingOptions(options);
-        System.out.println(this.FullFill.toString());
     }
 
     /**
@@ -61,10 +72,8 @@ public class Parte3 {
         CsvReadOptions.Builder builder =
                 CsvReadOptions.builder("data/AllMsgs.csv")
                         .separator(';')
-                        .header(true)
-                        .dateFormat("yyyy-MM-dd");
+                        .header(true);
         CsvReadOptions options = builder.build();
         this.AllMsg = Table.read().usingOptions(options);
-        System.out.println(this.AllMsg.toString());
     }
 }

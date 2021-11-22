@@ -1,4 +1,6 @@
 import quickfix.fix44.ExecutionReport;
+
+import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.ObjectOutputStream;
@@ -21,6 +23,10 @@ public class Parte1 {
         }
 
         //Export LIST to FILE
+        File directory = new File("./data");
+        if (! directory.exists()){
+            directory.mkdir();
+        }
         FileOutputStream fos = new FileOutputStream("data/ExecutionReport.ser");
         ObjectOutputStream oos = new ObjectOutputStream(fos);
         oos.writeObject(executionReportList);

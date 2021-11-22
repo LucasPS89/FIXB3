@@ -1,6 +1,34 @@
 # FIXB3
 
 Exemplo de como gerar mensagens ExecutionReport do Protocolo FIX com QuickFix/J.
+Programa Gera mensagens aleatórias.
+xxxxx
 
-## Instalação
 
+## Requisitos
+Certifique-se de ter o Maven adicionado à sua variável de ambiente MAVEN_HOME
+e o java adicionado à variavel de ambiente JAVA_HOME.
+Caso tenha dúvidas, acesse o seguinte site para ter um tutorial: https://mkyong.com/maven/how-to-install-maven-in-windows/
+
+
+## Compilação
+
+Abra o Command dentro da raiz do projeto e execute o seguinte comando:
+
+```bash
+mvn install
+```
+O Maven ira criar o build dentro do diretório  "target".
+
+## Execução
+Com o projeto compilado, navegue para o diretório target através do comando:
+
+```bash
+cd target
+```
+
+Uma vez dentro do diretório, execute o projeto através do comando:
+
+```bash
+java -jar FIXB31.0-shapshot.jar
+```

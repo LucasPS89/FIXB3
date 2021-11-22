@@ -40,7 +40,7 @@ public class FIXB3 {
         }
 
         //Parte3 do Teste
-        if (exec2) {
+        if (exec3) {
             System.out.println("-------------------------------------------------------------------");
             System.out.println("Executando PARTE 3");
             long p3_start = System.currentTimeMillis();

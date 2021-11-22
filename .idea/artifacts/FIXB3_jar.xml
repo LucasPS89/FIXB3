@@ -1,0 +1,77 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="FIXB3:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/FIXB3_jar</output-path>
+    <root id="archive" name="FIXB3.jar">
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/src/main/java/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="module-output" name="FIXB3" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/apache/maven/maven-settings/2.2.1/maven-settings-2.2.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/eclipse/sisu/org.eclipse.sisu.plexus/0.3.4/org.eclipse.sisu.plexus-0.3.4.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/apache/maven/maven-artifact-manager/2.2.1/maven-artifact-manager-2.2.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/apache/mina/mina-core/2.1.4/mina-core-2.1.4.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/quickfixj/quickfixj-core/2.3.1/quickfixj-core-2.3.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/quickfixj/quickfixj-codegenerator/2.3.1/quickfixj-codegenerator-2.3.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/net/sf/saxon/Saxon-HE/9.8.0-4/Saxon-HE-9.8.0-4.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/codehaus/plexus/plexus-interpolation/1.11/plexus-interpolation-1.11.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/jaxen/jaxen/1.2.0/jaxen-1.2.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/apache/maven/maven-model/3.8.1/maven-model-3.8.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/junit/junit/3.8.1/junit-3.8.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/apache/maven/maven-profile/2.2.1/maven-profile-2.2.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/codehaus/plexus/plexus-component-annotations/1.5.5/plexus-component-annotations-1.5.5.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/apache/maven/maven-project/2.2.1/maven-project-2.2.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/quickfixj/quickfixj-all/2.3.1/quickfixj-all-2.3.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/javax/annotation/jsr250-api/1.0/jsr250-api-1.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/slf4j/slf4j-api/1.7.30/slf4j-api-1.7.30.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/apache/maven/maven-plugin-api/3.8.1/maven-plugin-api-3.8.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/quickfixj/quickfixj-dictgenerator/2.3.1/quickfixj-dictgenerator-2.3.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/eclipse/sisu/org.eclipse.sisu.inject/0.3.4/org.eclipse.sisu.inject-0.3.4.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/codehaus/plexus/plexus-classworlds/2.6.0/plexus-classworlds-2.6.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/classworlds/classworlds/1.1-alpha-2/classworlds-1.1-alpha-2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/codehaus/plexus/plexus-utils/3.2.1/plexus-utils-3.2.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/javax/enterprise/cdi-api/1.0/cdi-api-1.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/apache/maven/maven-plugin-registry/2.2.1/maven-plugin-registry-2.2.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/apache/maven/wagon/wagon-provider-api/1.0-beta-6/wagon-provider-api-1.0-beta-6.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/apache/maven/maven-artifact/3.8.1/maven-artifact-3.8.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/apache/commons/commons-lang3/3.8.1/commons-lang3-3.8.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/quickfixj/quickfixj-messages-all/2.3.1/quickfixj-messages-all-2.3.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/apache/maven/maven-repository-metadata/2.2.1/maven-repository-metadata-2.2.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/backport-util-concurrent/backport-util-concurrent/3.1/backport-util-concurrent-3.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/codehaus/plexus/plexus-container-default/1.0-alpha-9-stable-1/plexus-container-default-1.0-alpha-9-stable-1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/javax/inject/javax.inject/1/javax.inject-1.jar" path-in-jar="/" />
+      <element id="library" level="project" name="Maven: org.apache.maven:maven-artifact:3.8.1" />
+      <element id="library" level="project" name="Maven: org.quickfixj:quickfixj-all:2.3.1" />
+      <element id="library" level="project" name="Maven: org.quickfixj:quickfixj-core:2.3.1" />
+      <element id="library" level="project" name="Maven: org.apache.mina:mina-core:2.1.4" />
+      <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:1.7.30" />
+      <element id="library" level="project" name="Maven: org.quickfixj:quickfixj-messages-all:2.3.1" />
+      <element id="library" level="project" name="Maven: org.quickfixj:quickfixj-codegenerator:2.3.1" />
+      <element id="library" level="project" name="Maven: org.apache.maven:maven-plugin-api:3.8.1" />
+      <element id="library" level="project" name="Maven: org.apache.maven:maven-model:3.8.1" />
+      <element id="library" level="project" name="Maven: org.apache.commons:commons-lang3:3.8.1" />
+      <element id="library" level="project" name="Maven: org.eclipse.sisu:org.eclipse.sisu.plexus:0.3.4" />
+      <element id="library" level="project" name="Maven: javax.enterprise:cdi-api:1.0" />
+      <element id="library" level="project" name="Maven: javax.annotation:jsr250-api:1.0" />
+      <element id="library" level="project" name="Maven: javax.inject:javax.inject:1" />
+      <element id="library" level="project" name="Maven: org.eclipse.sisu:org.eclipse.sisu.inject:0.3.4" />
+      <element id="library" level="project" name="Maven: org.codehaus.plexus:plexus-component-annotations:1.5.5" />
+      <element id="library" level="project" name="Maven: org.codehaus.plexus:plexus-utils:3.2.1" />
+      <element id="library" level="project" name="Maven: org.codehaus.plexus:plexus-classworlds:2.6.0" />
+      <element id="library" level="project" name="Maven: org.apache.maven:maven-project:2.2.1" />
+      <element id="library" level="project" name="Maven: org.apache.maven:maven-settings:2.2.1" />
+      <element id="library" level="project" name="Maven: org.apache.maven:maven-profile:2.2.1" />
+      <element id="library" level="project" name="Maven: org.apache.maven:maven-artifact-manager:2.2.1" />
+      <element id="library" level="project" name="Maven: org.apache.maven:maven-repository-metadata:2.2.1" />
+      <element id="library" level="project" name="Maven: org.apache.maven.wagon:wagon-provider-api:1.0-beta-6" />
+      <element id="library" level="project" name="Maven: backport-util-concurrent:backport-util-concurrent:3.1" />
+      <element id="library" level="project" name="Maven: org.apache.maven:maven-plugin-registry:2.2.1" />
+      <element id="library" level="project" name="Maven: org.codehaus.plexus:plexus-interpolation:1.11" />
+      <element id="library" level="project" name="Maven: org.codehaus.plexus:plexus-container-default:1.0-alpha-9-stable-1" />
+      <element id="library" level="project" name="Maven: junit:junit:3.8.1" />
+      <element id="library" level="project" name="Maven: classworlds:classworlds:1.1-alpha-2" />
+      <element id="library" level="project" name="Maven: net.sf.saxon:Saxon-HE:9.8.0-4" />
+      <element id="library" level="project" name="Maven: org.quickfixj:quickfixj-dictgenerator:2.3.1" />
+      <element id="library" level="project" name="Maven: jaxen:jaxen:1.2.0" />
+    </root>
+  </artifact>
+</component>

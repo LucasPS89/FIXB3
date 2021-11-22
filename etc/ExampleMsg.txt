@@ -1,0 +1,116 @@
+http://www2.bmfbovespa.com.br/en-us/services/trading-platforms/puma-trading-system/EntryPoint-quick-reference.asp
+
+(OK)    8=FIX.4.4                   BeginString (Auto-generated)
+(OK)    9=507                       BodyLength (Auto-generated)
+(OK)    35=8                        MsgType 8=EXECUTION REPORT (Auto-generated)
+(OK)    34=119848                   MsgSeqNum - Integer message sequence number. Max length: 9
+(OK)    49=SISTEMA                  SenderCompID - Please contact BM&FBOVESPA for appropriate CompID assignment (see section 3.2). - Max length: 50
+(OK)    52=20200102-14:32:25.120    SendingTime - Expressed in UTC (Universal Time Coordinated) Max length: 21
+(OK)    56=DROPCOPY                 TargetCompID - Please contact BM&FBOVESPA for appropriate CompID assignment (see section 3.2).
+(OK)    128=GATEWAY                 DeliverToCompID - Assigned value used to identify the firm targeted to receive the message sent by BM&FBOVESPA. As this tag will be soon deprecated, no client application should create a dependency on it.
+(OK)    1=111111                    Account - Account mnemonic
+(OK)    6=0                         AvgPx - Always 0 (zero).
+(OK)    11=009FDS8HGA               ClOrdID - Unique identifier of the order as assigned by the market participant. Max length: 38
+(OK)    14= 10300                   CumQty - Total number of shares or contracts filled. Max length: 15
+(OK)    17=28376823                 ExecID - Unique identifier of execution message as assigned by the exchange – unique per instrument. Max length: 32
+(OK)    22=8                        SecurityIDSource - Conditionally required if the SecurityID field is set. 8 - EXCHANGE SYMBOL - Max length: 1
+(OK)    31=10.34                    LastPx - Price of this (last) fill. - Max length: 20
+(OK)    32=7500                     LastQty - Quantity of shares bought/sold on this (last) fill. Conditionally required when ExecType = F (Trade). Max length: 15
+(OK)    37=9823759                  OrderID - Unique identifier for Order as assigned by sell-side (broker, exchange, ECN). Uniqueness must be guaranteed within a single trading day. Firms which accept multi-day orders should consider embedding a date within the OrderID field to assure uniqueness across days.
+                                    Max length: 26
+                                    ExecutionReport - Unique identifier for Order as assigned by the exchange. Uniqueness is guaranteed within a single trading day/instrument. Value is “NONE” if order is rejected.
+(OK)    38=10300                    OrderQty - Quantity ordered. Max length: 15
+(OK)    39=2                        OrdStatus - Order status.
+                                        0 - NEW
+                                        1 - PARTIALLY FILLED
+                                        2 - FILLED
+                                        4 - CANCELED
+                                        5 - REPLACED
+                                        8 - REJECTED
+                                        9 - SUSPENDED
+                                        C - EXPIRED
+                                        Z - PREVIOUS FINAL STATE
+(OK)    40=2                        OrdType - Order type.
+                                    1 - MARKET
+                                    2 - LIMIT
+                                    3 - STOP LOSS
+                                    4 - STOP LIMIT
+                                    K - MARKET WITH LEFTOVER AS LIMIT
+(OK)    44=10.34            Price - Price per share or contract. Conditionally required if the order type requires a price (not market orders). - Max length: 20
+(OK)    48=200000581991             SecurityID - Security ID as defined by BM&FBOVESPA. For the SecurityID list, see the Security List message in Market Data feed.
+(OK)    54=1                        Side - Side of order - 1 - BUY 2 - SELL
+(OK)    55=PETR4                    Symbol - BM&FBOVESPA requires that this field is properly set. It contains the human readable form of the SecurityID tag, available in the Security List message in Market Data feed.
+(OK)    59=0                        TimeInForce - Specifies how long the order remains in effect. Absence of this field is interpreted as DAY.
+                            0 - DAY
+                            1 - GOOD TILL CANCEL
+                            3 - IMMEDIATE OR CANCEL
+                            4 - FILL OR KILL
+                            6 - GOOD TILL DATE
+                            7 - AT THE CLOSE
+                            A - GOOD FOR AUCTION
+(OK)    60=20200102-14:32:25.117    TransactTime - Time of execution/order creation; expressed in UTC.
+75=20200102                 TradeDate - Indicates date of trade referenced in this message in YYYYMMDD format (expressed in local time at place of trade). Absence of this field indicates current day (expressed in local time at place of trade).
+(OK)    150=F                       ExecType - Describes the action that triggered this specific Execution Report - see the OrdStatus (39) tag for the current order status (e.g, Partially Filled).
+                            0 - NEW
+                            4 - CANCELED
+                            5 - REPLACE
+                            8 - REJECTED
+                            9 - SUSPENDED
+                            C - EXPIRED
+                            D - RESTATED
+                            F - TRADE
+                            H - TRADE CANCEL
+151=0                       LeavesQty - Amount of shares open for further execution, or unexecuted. LeavesQty = OrderQty - CumQty.
+198=29385792                SecondaryOrderID - Exchange-generated order identifier that changes for each order modification event, or quantity replenishment in disclosed orders.
+207=BVMF                    SecurityExchange - Market to which security ID (tag 48) belongs.
+336=1                       TradingSessionID - Identifier for Trading Session
+                            1 - REGULAR DAY SESSION PHASES
+                            6 - NON REGULAR SESSION
+581=39                      AccountType - Type of Account associated with an order. Absence of this Tag causes Account to be interpreted as Regular Account.
+                            38 - REMOVE ACCOUNT INFORMATION
+                            39 - REGULAR ACCOUNT
+625=17                      TradingSessionSubID -  Identifier for the instrument group phase.
+                            2 - PAUSE
+                            4 - CLOSE
+                            17 - OPEN
+                            18 - PRE CLOSE
+                            21 - PRE OPEN
+                            101 - FINAL CLOSING CALL
+1057=N                      AggressorIndicator - Used to identify whether the order initiator is an aggressor or not in the trade.
+                            Y - ORDER INITIATOR IS AGRESSOR
+                            N - ORDER INITIATOR IS PASSIVE
+1180=GATEWAY                ApplID - Identifies the session with which a message is associated.
+5149=MEMOVALUE              Memo - Free format text field. This field may be used to convey client's relevant info. It's always echoed in the reports. Max length: 50
+6032=62140                  UniqueTradeID - Contains the unique identifier for this trade, per instrument + trading date, as assigned by the exchange. Conditionally required if ExecType = F (Trade).
+382=1                       NoContraBrokers - Number of contra brokers in an execution. Currently, this field will be always set to 1. Conditionally required when reporting trades.
+375=8                       ContraBroker - Identifies contra broker.
+(OK)    453=4                       NoPartyIDs - Repeating group below should contain unique combinations of PartyID, PartyIDSource, and PartyRole.
+
+(OK)    448=100                     PartyID - Used to identify source of PartyID. Conditionally required if NoPartyID > 0.
+(OK)    447=D                       PartyIDSource - Identifies class or source of the PartyID (448) value. Conditionally required if NoPartyID > 0.
+                                    D - PROPRIETARY CUSTOM CODE
+(OK)    452=7                       PartyRole - Identifies the type or role of the PartyID (448) specified. Conditionally required if NoPartyID > 0.
+                                    4 - CLEARING FIRM
+                                    5 - INVESTOR ID
+                                    7 - ENTERING FIRM
+                                    12 - EXECUTING TRADER
+                                    17 - CONTRA FIRM
+                                    28 - CUSTODIAN
+                                    36 - ENTERING TRADER
+                                    54 - SENDER LOCATION
+                                    55 - SESSION ID
+                                    76 - DESK ID
+                                    1001 - ORDER ORIGINATION SESSION
+                                    1002 - MARKET SUPERVISOR ID
+                                    1003 - CUSTODY ACCOUNT
+                                    1004 - CUSTODY ALLOCATION TYPE
+(OK)    448=DMA                     PartyID - Used to identify source of PartyID. Conditionally required if NoPartyID > 0.
+447=D
+452=36
+448=XYZ
+447=D
+452=54
+448=81274681
+447=D
+452=5
+10=007                  CheckSum - Always unencrypted, always last field in message - Max length:

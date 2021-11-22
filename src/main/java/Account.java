@@ -1,6 +1,8 @@
 import java.util.Random;
 
-
+/**
+ * Class to generate 10 random account numbers
+ */
 public class Account {
     //List of Accounts in DB
     int[] accounts = new int[10];

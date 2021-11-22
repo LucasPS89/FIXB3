@@ -1,6 +1,10 @@
 import java.util.HashMap;
 import java.util.Random;
 
+/**
+ * Class to Generate Instruments codes
+ */
+
 public class Instrument {
     //Map of ISIN codes
     HashMap<String, String> isinCodes = new HashMap<String, String>();

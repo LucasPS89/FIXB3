@@ -6,9 +6,20 @@ import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Parte 2 do Teste. Carrega para memória o resultado da Parte 1 e gera arquivo CSV e TXT
+ */
+
 public class Parte2 {
     List<ExecutionReport> executionReportList = new ArrayList<ExecutionReport>();
 
+    /**
+     * Load serialized messages into memory and export them to CSV/TXT files in a user friendly format
+     * @return
+     * @throws IOException
+     * @throws ClassNotFoundException
+     * @throws FieldNotFound
+     */
     public boolean ProcessMessages() throws IOException, ClassNotFoundException, FieldNotFound {
         if (!this.loadExecutionReportList()){
             System.out.println("Parte 1 do teste não foi executada. Não é possível prosseguir com a parte 2");

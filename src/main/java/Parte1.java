@@ -7,6 +7,10 @@ import java.io.ObjectOutputStream;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Parte 1 do teste. Cria mensagens aleatórias do tipo ExecutionReport e serializa no final
+ */
+
 public class Parte1 {
     public void GenerateExecutionReports() throws IOException {
         //Generate 5000 ExecutionReport

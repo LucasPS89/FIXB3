@@ -2,9 +2,11 @@ import tech.tablesaw.api.Table;
 import tech.tablesaw.io.csv.CsvReadOptions;
 import java.io.IOException;
 import java.io.PrintWriter;
-
 import static tech.tablesaw.aggregate.AggregateFunctions.mean;
 
+/**
+ * Parte 3 do Teste. Compara arquivos de OUTPUT e exibe resultado
+ */
 public class Parte3 {
     private Table FullFill;
     private Table FullFillSummarized;
